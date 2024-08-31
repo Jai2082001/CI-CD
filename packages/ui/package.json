@@ -6,7 +6,11 @@
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
-    "./appbar": "./src/Appbar.tsx"
+    "./appbar": "./src/Appbar.tsx",
+    "./Select": "./src/Select.tsx",
+    "./Textinput": "./src/Textinput.tsx",
+    "./Center": "./src/Center.tsx"
+    
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
