@@ -3,7 +3,10 @@ import { redirect } from 'next/navigation'
 import { authOptions } from "./lib/auth";
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 export default async function Page(){
