@@ -5,7 +5,7 @@ import { authOptions } from "./lib/auth";
 
 export default async function Page(){
   const session = await getServerSession(authOptions)
-  console.log('adad')
+  console.log('adad121')
   if(session?.user){
     redirect('/dashboard');
   }else[
