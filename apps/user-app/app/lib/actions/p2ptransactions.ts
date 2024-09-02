@@ -2,7 +2,15 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "../auth";
 import prisma from "@repo/db/client";
-import { timeStamp } from "console";
+
+type p2ptransfer = {
+    id: Number,
+    amount: Number, 
+    timestamp: Date,
+    fromUserId: Number,
+    toUserId: Number,
+    status: String
+}
 
 export async function p2pTransfer(to: string, amount: number) {
     const session = await getServerSession(authOptions);
@@ -93,8 +101,11 @@ export async function getp2pTransactions() {
             timestamp: 'asc'
         }
     })
-    p2pTransfers.map((single)=>{
+    
+    // @ts-ignore
+    p2pTransfers.map((single: p2ptransfer )=>{
         if(single.fromUserId == id) {
+
             single.status = 'Sent'
         }else{
             single.status = 'Received'
