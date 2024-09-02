@@ -29,6 +29,8 @@ jobs:
     - name: Verify Pushed Image
       run: docker pull jaideepgrover/cicd:latest  # Replace with your Docker Hub username and repository
     # improved key
+    # another change
+
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:
