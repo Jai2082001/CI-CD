@@ -31,6 +31,7 @@ jobs:
     # improved key
     # another change
     # another change
+    # updated the machine
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:
