@@ -14,12 +14,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-      
+    
       - name: Install Dependencies
         run: npm install
+    
+      - name: Run Prisma Client
+        run: cd packages/db && npx prisma generate 
         
       - name: Run Build
         run: npm run build
         
-      - name: Run Prisma Client
-        run: cd packages/db && npx prisma generate 
+     
