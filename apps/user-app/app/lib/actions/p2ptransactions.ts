@@ -113,7 +113,7 @@ export async function getp2pTransactions() {
     })
     
     console.log(p2pTransfers)
-    return p2pTransfers
+    return p2pTransfers 
 
 
 }
