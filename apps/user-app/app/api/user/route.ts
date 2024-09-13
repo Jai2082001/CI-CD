@@ -15,5 +15,3 @@ export const GET = async () => {
         status: 403
     })
 }
-// asdad
-// aSD  
